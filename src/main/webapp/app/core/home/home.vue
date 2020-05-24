@@ -4,10 +4,9 @@
             <span class="hipster img-fluid rounded"></span>
         </div>
         <div class="col-md-9">
-            <h1 class="display-4">Welcome, Java Hipster!</h1>
-            <p class="lead">This is your homepage</p>
+            <h1 class="display-4">开始你的游戏之旅</h1>
 
-            <div>
+            <div class="logIn">
                 <div class="alert alert-success" v-if="authenticated">
                     <span v-if="username">You are logged in as user "{{username}}"</span>
                 </div>
@@ -21,25 +20,38 @@
                     <router-link class="alert-link" to="/register">Register a new account</router-link>
                 </div>
             </div>
-
-            <p>
-                If you have any question on JHipster:
-            </p>
-
-            <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener">JHipster public chat room</a></li>
-                <li><a href="https://twitter.com/java_hipster" target="_blank" rel="noopener">follow @java_hipster on Twitter</a></li>
-            </ul>
-
-            <p>
-                <span>If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener">GitHub</a>!
-            </p>
+            <div class="linkBox">
+                <router-link class="myLink1" to="/rasianBlock">俄罗斯方块</router-link>
+                <router-link class="myLink" to="/numsCom">2048</router-link>
+            </div>
         </div>
     </div>
 </template>
 
 <script lang="ts" src="./home.component.ts">
 </script>
+
+<style>
+    .logIn{
+        margin-top: 30px;
+    }
+
+    .linkBox{
+        display:flex;
+    }
+
+    h1{
+        font-weight: normal;
+    }
+
+    .myLink{
+        color: #fff;
+        font-size: 40px;
+        margin-left: 100px;
+    }
+
+    .myLink1{
+        color: #fff;
+        font-size: 40px;
+    }
+</style>
