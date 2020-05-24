@@ -9,8 +9,6 @@ import Router from 'vue-router';
 import { Authority } from '@/shared/security/authority';
 const Home = () => import('../core/home/home.vue');
 const Error = () => import('../core/error/error.vue');
-const RasianBlock = () => import('../core/home/rasianBlock.vue');
-const NumsCom = () => import('../core/home/numsCom.vue');
 const Register = () => import('../account/register/register.vue');
 const Activate = () => import('../account/activate/activate.vue');
 const ResetPasswordInit = () => import('../account/reset-password/init/reset-password-init.vue');
@@ -39,16 +37,6 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
-    },
-    {
-      path: '/rasianBlock',
-      name: 'RasianBlock',
-      component: RasianBlock
-    },
-    {
-      path: '/numsCom',
-      name: 'NumsCom',
-      component: NumsCom
     },
     {
       path: '/',
