@@ -21,9 +21,11 @@
                 </div>
             </div>
             <div class="linkBox">
-                <a class="myLink1" href="./rasianBlock.html">俄罗斯方块</a>
-                <a class="myLink" >2048</a>
-            </div>
+                <a class="myLink1" href="/content/rasianBlock.html">俄罗斯方块</a>
+                <a class="myLink" href="/content/2048.html">2048</a>
+                <!-- 后端通过虚拟路径实现本地访问跳转 -->
+<!--                 <iframe src="../../../outerHTML/2048.html"></iframe>
+ -->            </div>
         </div>
     </div>
 </template>

@@ -1,0 +1,31 @@
+<template>
+    <div>
+        <p> join the number to get 2048 tile!</p>
+<div class="cover"></div>
+<div class="container">
+    <div class="logo">2048</div>
+    <div class="scoreBar">
+        <label style="position: relative; top:-13px;">score:</label>
+        <label id="score"> 0</label>
+        <div id="addScore"></div>
+    </div>
+    <div id="stage"></div>
+    <!--<div id="gameOver hide">-->
+        <!--<div class="overText">GameOver!</div>-->
+    <!--</div>-->
+</div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        
+    },
+}
+</script>
