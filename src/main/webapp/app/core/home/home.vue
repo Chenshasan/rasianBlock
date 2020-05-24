@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="linkBox">
-                <router-link class="myLink1" to="/rasianBlock">俄罗斯方块</router-link>
-                <router-link class="myLink" to="/numsCom">2048</router-link>
+                <a class="myLink1" href="./rasianBlock.html">俄罗斯方块</a>
+                <a class="myLink" >2048</a>
             </div>
         </div>
     </div>
