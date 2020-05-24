@@ -1,14 +1,17 @@
 <template>
     <div class="home row">
-        <div class="col-md-3">
-            <span class="hipster img-fluid rounded"></span>
-        </div>
-        <div class="col-md-9">
+        <div class="col-md-12">
             <h1 class="display-4">开始你的游戏之旅</h1>
 
             <div class="logIn">
                 <div class="alert alert-success" v-if="authenticated">
-                    <span v-if="username">You are logged in as user "{{username}}"</span>
+                    <span class="suc" v-if="username">You are logged in as user "{{username}}"</span>
+                    <br>
+                    <a class="myLink1" href="/content/rasianBlock.html">俄罗斯方块</a>
+                    <a class="myLink" href="/content/2048.html">2048</a>
+                        <!-- 后端通过虚拟路径实现本地访问跳转 -->
+                        <!--                 <iframe src="../../../outerHTML/2048.html"></iframe>
+                         -->
                 </div>
 
                 <div class="alert alert-warning" v-if="!authenticated">
@@ -20,12 +23,6 @@
                     <router-link class="alert-link" to="/register">Register a new account</router-link>
                 </div>
             </div>
-            <div class="linkBox">
-                <a class="myLink1" href="/content/rasianBlock.html">俄罗斯方块</a>
-                <a class="myLink" href="/content/2048.html">2048</a>
-                <!-- 后端通过虚拟路径实现本地访问跳转 -->
-<!--                 <iframe src="../../../outerHTML/2048.html"></iframe>
- -->            </div>
         </div>
     </div>
 </template>
@@ -34,12 +31,21 @@
 </script>
 
 <style>
+    .suc{
+        font-size: 30px;
+    }
+
+    .home{
+        margin-top: 150px;
+        text-align: center;
+    }
     .logIn{
         margin-top: 30px;
     }
 
     .linkBox{
         display:flex;
+        text-align: center;
     }
 
     h1{
